@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* Gris claro neutro */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    padding: 5px;
+    background: #ffffff; /* Blanco neutro */
+    box-sizing: border-box;
+    border-radius: 12px; 
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.logo {
+    width: 100%;
+    background: #e0e0e0; /* Gris muy claro */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px; 
+    box-sizing: border-box;
+}
+
+.logoimg {
+    width: 40px; 
+    height: auto;
+    margin-right: 15px;
+}
+
+.title {
+    font-size: 20px; 
+    color: #333; /* Gris oscuro */
+    flex: 1;
+    text-align: center;
+}
+
+.left, .right, .left-button {
+    border-radius: 12px; 
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+    width: 70%;
+    height: auto;
+    background-color: #f9f9f9; /* Gris muy claro */
+    padding: 10px;
+}
+
+.right {
+    float: right;
+    width: 30%;
+    height: auto;
+    background: #e8e8e8; /* Gris claro */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.left-button {
+    float: left;
+    width: 70%;
+    height: auto;
+    background-color: #f9f9f9; /* Gris muy claro */
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text-input {
+    width: 100%;
+    color: #333; /* Gris oscuro */
+    font-size: 20px;
+    border: 2px solid #b0b0b0; /* Gris neutro */
+    background: #ffffff; /* Blanco */
+    border-radius: 8px; 
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.final{
+    margin-left: 200px;
+}
+
+#imgDer {
+    width: 80%; /* Tamaño ajustado */
+    height: auto;
+    border-radius: 8px; 
+    margin: 20px auto;
+    display: block;
+}
+
+#texto {
+    font-size: 18px;
+    color: #333; /* Gris oscuro */
+    text-align: center;
+    margin: 20px auto;
+}
+
+#texto2 {
+    width: 100%;
+    color: #333; /* Gris oscuro */
+    border: 2px solid #b0b0b0; /* Gris neutro */
+    background: #ffffff; /* Blanco */
+    font-size: 15px;
+    border-radius: 8px; 
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+}
+
+#bt-encriptar, #bt-desencriptar, #copiar {
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: background 0.3s ease;
+    width: 100%; /* Ajusta el tamaño de los botones */
+    box-sizing: border-box;
+}
+
+#bt-encriptar {
+    background: #6a8f75; /* Verde grisáceo */
+}
+
+#bt-desencriptar {
+    background: #a1b9a7; /* Verde claro */
+}
+
+#copiar {
+    background: #6a8f75; /* Verde grisáceo */
+    color: white;
+    display: none;
+    border-radius: 8px; 
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 10%;
+}
+
+#copiar:hover {
+    background: #5b8c4b; /* Verde más oscuro al pasar el ratón */
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .left, .right, .left-button {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    .logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    #imgDer {
+        width: 100%;
+    }
+
+    #texto2 {
+        font-size: 14px;
+    }
+
+    #bt-encriptar, #bt-desencriptar, #copiar {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 16px;
+    }
+
+    .text-input, #texto2 {
+        font-size: 12px;
+    }
+
+    #bt-encriptar, #bt-desencriptar, #copiar {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
